@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ServerInformationUserInterface.ServerInformationProcessorReference {
+namespace ServerInformationUserInterface.ServerInformationProviderReference {
     using System.Runtime.Serialization;
     using System;
     
@@ -107,58 +107,46 @@ namespace ServerInformationUserInterface.ServerInformationProcessorReference {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServerInformationProcessorReference.IServerInformationProcessor")]
-    public interface IServerInformationProcessor {
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServerInformationProviderReference.IServerInformationProvider")]
+    public interface IServerInformationProvider {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerInformationProcessor/GetAllHostAvailable", ReplyAction="http://tempuri.org/IServerInformationProcessor/GetAllHostAvailableResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerInformationProvider/GetAllHostAvailable", ReplyAction="http://tempuri.org/IServerInformationProvider/GetAllHostAvailableResponse")]
         string[] GetAllHostAvailable();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerInformationProcessor/GetAllHostAvailable", ReplyAction="http://tempuri.org/IServerInformationProcessor/GetAllHostAvailableResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerInformationProvider/GetAllHostAvailable", ReplyAction="http://tempuri.org/IServerInformationProvider/GetAllHostAvailableResponse")]
         System.Threading.Tasks.Task<string[]> GetAllHostAvailableAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerInformationProcessor/GetHostInformation", ReplyAction="http://tempuri.org/IServerInformationProcessor/GetHostInformationResponse")]
-        ServerInformationUserInterface.ServerInformationProcessorReference.ServerInformation[] GetHostInformation(string hostName);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerInformationProvider/GetHostInformation", ReplyAction="http://tempuri.org/IServerInformationProvider/GetHostInformationResponse")]
+        ServerInformationUserInterface.ServerInformationProviderReference.ServerInformation[] GetHostInformation(string hostName);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerInformationProcessor/GetHostInformation", ReplyAction="http://tempuri.org/IServerInformationProcessor/GetHostInformationResponse")]
-        System.Threading.Tasks.Task<ServerInformationUserInterface.ServerInformationProcessorReference.ServerInformation[]> GetHostInformationAsync(string hostName);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerInformationProcessor/AddServer", ReplyAction="http://tempuri.org/IServerInformationProcessor/AddServerResponse")]
-        void AddServer(string hostName);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerInformationProcessor/AddServer", ReplyAction="http://tempuri.org/IServerInformationProcessor/AddServerResponse")]
-        System.Threading.Tasks.Task AddServerAsync(string hostName);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerInformationProcessor/SetServerInformation", ReplyAction="http://tempuri.org/IServerInformationProcessor/SetServerInformationResponse")]
-        void SetServerInformation(string server, System.DateTime time, float processorUsage, float memoryUsage);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerInformationProcessor/SetServerInformation", ReplyAction="http://tempuri.org/IServerInformationProcessor/SetServerInformationResponse")]
-        System.Threading.Tasks.Task SetServerInformationAsync(string server, System.DateTime time, float processorUsage, float memoryUsage);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServerInformationProvider/GetHostInformation", ReplyAction="http://tempuri.org/IServerInformationProvider/GetHostInformationResponse")]
+        System.Threading.Tasks.Task<ServerInformationUserInterface.ServerInformationProviderReference.ServerInformation[]> GetHostInformationAsync(string hostName);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IServerInformationProcessorChannel : ServerInformationUserInterface.ServerInformationProcessorReference.IServerInformationProcessor, System.ServiceModel.IClientChannel {
+    public interface IServerInformationProviderChannel : ServerInformationUserInterface.ServerInformationProviderReference.IServerInformationProvider, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class ServerInformationProcessorClient : System.ServiceModel.ClientBase<ServerInformationUserInterface.ServerInformationProcessorReference.IServerInformationProcessor>, ServerInformationUserInterface.ServerInformationProcessorReference.IServerInformationProcessor {
+    public partial class ServerInformationProviderClient : System.ServiceModel.ClientBase<ServerInformationUserInterface.ServerInformationProviderReference.IServerInformationProvider>, ServerInformationUserInterface.ServerInformationProviderReference.IServerInformationProvider {
         
-        public ServerInformationProcessorClient() {
+        public ServerInformationProviderClient() {
         }
         
-        public ServerInformationProcessorClient(string endpointConfigurationName) : 
+        public ServerInformationProviderClient(string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         
-        public ServerInformationProcessorClient(string endpointConfigurationName, string remoteAddress) : 
+        public ServerInformationProviderClient(string endpointConfigurationName, string remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public ServerInformationProcessorClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public ServerInformationProviderClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public ServerInformationProcessorClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public ServerInformationProviderClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
         }
         
@@ -170,28 +158,12 @@ namespace ServerInformationUserInterface.ServerInformationProcessorReference {
             return base.Channel.GetAllHostAvailableAsync();
         }
         
-        public ServerInformationUserInterface.ServerInformationProcessorReference.ServerInformation[] GetHostInformation(string hostName) {
+        public ServerInformationUserInterface.ServerInformationProviderReference.ServerInformation[] GetHostInformation(string hostName) {
             return base.Channel.GetHostInformation(hostName);
         }
         
-        public System.Threading.Tasks.Task<ServerInformationUserInterface.ServerInformationProcessorReference.ServerInformation[]> GetHostInformationAsync(string hostName) {
+        public System.Threading.Tasks.Task<ServerInformationUserInterface.ServerInformationProviderReference.ServerInformation[]> GetHostInformationAsync(string hostName) {
             return base.Channel.GetHostInformationAsync(hostName);
-        }
-        
-        public void AddServer(string hostName) {
-            base.Channel.AddServer(hostName);
-        }
-        
-        public System.Threading.Tasks.Task AddServerAsync(string hostName) {
-            return base.Channel.AddServerAsync(hostName);
-        }
-        
-        public void SetServerInformation(string server, System.DateTime time, float processorUsage, float memoryUsage) {
-            base.Channel.SetServerInformation(server, time, processorUsage, memoryUsage);
-        }
-        
-        public System.Threading.Tasks.Task SetServerInformationAsync(string server, System.DateTime time, float processorUsage, float memoryUsage) {
-            return base.Channel.SetServerInformationAsync(server, time, processorUsage, memoryUsage);
         }
     }
 }

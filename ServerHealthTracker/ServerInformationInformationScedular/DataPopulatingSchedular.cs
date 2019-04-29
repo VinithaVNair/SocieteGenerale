@@ -13,7 +13,7 @@ namespace ServerInformationInformationSchedular
 
             var hostinformation = serverInforationClient.GetServerInformation();
 
-            var serverInformationProcessorClient = new ServerInformationProcessorReference.ServerInformationProcessorClient();
+            var serverInformationProcessorClient = new ServerInformationReference.ServerInformationSetterClient();
             
             serverInformationProcessorClient.SetServerInformation(hostinformation);
         }

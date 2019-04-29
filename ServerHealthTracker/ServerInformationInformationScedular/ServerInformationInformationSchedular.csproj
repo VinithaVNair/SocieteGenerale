@@ -49,7 +49,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Connected Services\ServerInformationProcessorReference\Reference.cs">
+    <Compile Include="Connected Services\ServerInformationReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -69,19 +69,16 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\ServerHealthReference\ServerHealth.wsdl" />
-    <None Include="Connected Services\ServerInformationProcessorReference\item.xsd">
+    <None Include="Connected Services\ServerInformationReference\item.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServerInformationProcessorReference\item1.xsd">
+    <None Include="Connected Services\ServerInformationReference\item1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServerInformationProcessorReference\item2.xsd">
+    <None Include="Connected Services\ServerInformationReference\item2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServerInformationProcessorReference\item3.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\ServerInformationProcessorReference\ServerInformationProcessor.wsdl" />
+    <None Include="Connected Services\ServerInformationReference\ServerInformationSetter.wsdl" />
     <None Include="Properties\DataSources\ServerInformationShared.ServerInformation.datasource" />
   </ItemGroup>
   <ItemGroup>
@@ -95,7 +92,7 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\ServerHealthReference\" />
-    <WCFMetadataStorage Include="Connected Services\ServerInformationProcessorReference\" />
+    <WCFMetadataStorage Include="Connected Services\ServerInformationReference\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\ServerHealthReference\item.disco" />
@@ -113,16 +110,16 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\ServerInformationProcessorReference\item.disco" />
+    <None Include="Connected Services\ServerInformationReference\item.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\ServerInformationProcessorReference\configuration91.svcinfo" />
+    <None Include="Connected Services\ServerInformationReference\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\ServerInformationProcessorReference\configuration.svcinfo" />
+    <None Include="Connected Services\ServerInformationReference\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\ServerInformationProcessorReference\Reference.svcmap">
+    <None Include="Connected Services\ServerInformationReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
